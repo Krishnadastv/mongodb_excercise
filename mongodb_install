@@ -1,11 +1,11 @@
 
-  695  wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
-  696  echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
-  697  sudo apt-get update
-  698  sudo apt-get install -y mongodb-org
-  699  sudo systemctl start mongod
-  700  sudo systemctl status mongod
-  701  ps -e| grep 'mongod'
-  703  mongo  #shell
-  704  sudo ufw status 
-  705  sudo systemctl enable mongod
+    wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -
+    echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+    sudo apt-get update
+    sudo apt-get install -y mongodb-org
+    sudo systemctl start mongod
+    sudo systemctl status mongod
+    ps -e| grep 'mongod'
+    mongo  #shell
+    sudo ufw status 
+    sudo systemctl enable mongod
