@@ -1,0 +1,28 @@
+- to enter mongo shell
+mongo
+
+- to connect to db or create new db
+use dbname
+
+- to show all dbs in the server
+
+show dbs
+
+- to show what is the db currently connected
+
+db
+
+- to insert in to db
+
+db.movie.insert({"name":"Lucifer"})
+
+- to drop database 
+
+db.dropDatabase()  
+
+- to query documents
+
+db.COLLECTION_NAME.find({})   
+db.movie.find()
+db.movie.find({})
+
